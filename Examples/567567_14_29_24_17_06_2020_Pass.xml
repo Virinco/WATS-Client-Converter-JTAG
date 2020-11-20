@@ -1,0 +1,1149 @@
+﻿<?xml version="1.0"?>
+<testrun datetime="2020-06-17T13:29:24.2586780Z">
+  <testgroup name="Enter Serial Number">
+    <testfunction name="NEW_SERIAL_NUMBER">
+      <html-output lines="1" inline="False"><![CDATA[<a name=startoftest19-2020-06-17T13:29:24.2586780Z id=startoftest19-2020-06-17T13:29:24.2586780Z></a>]]></html-output>
+      <text-output output-type="UserText">
+        <![CDATA[Checking voltage on CN1 pin 1 using XJLink2 voltage measurement.
+Voltage read: 3271 mV - within tolerance.
+]]>
+      </text-output>
+      <text-output output-type="Pass">
+        <![CDATA[NEW_SERIAL_NUMBER passed
+]]>
+      </text-output>
+      <text-output output-type="Notification">
+        <![CDATA[Serial number set to 567567 by the test system
+]]>
+      </text-output>
+      <plain-text>
+        Checking voltage on CN1 pin 1 using XJLink2 voltage measurement.
+        Voltage read: 3271 mV - within tolerance.
+        NEW_SERIAL_NUMBER passed
+        Serial number set to 567567 by the test system
+      </plain-text>
+      <result value="Passed" />
+      <time-taken>4231</time-taken>
+    </testfunction>
+  </testgroup>
+  <testgroup name="Check Chain">
+    <testfunction name="CheckChain">
+      <html-output lines="1" inline="False"><![CDATA[<a name=startoftest20-2020-06-17T13:29:24.2586780Z id=startoftest20-2020-06-17T13:29:24.2586780Z></a>]]></html-output>
+      <text-output output-type="UserText">
+        <![CDATA[Checking the integrity of the JTAG chain.
+]]>
+      </text-output>
+      <text-output output-type="Pass">
+        <![CDATA[CheckChain passed
+]]>
+      </text-output>
+      <plain-text>
+        Checking the integrity of the JTAG chain.
+        CheckChain passed
+      </plain-text>
+      <result value="Passed" />
+      <time-taken>232</time-taken>
+    </testfunction>
+  </testgroup>
+  <testgroup name="Connection Test">
+    <testfunction name="CONNTEST">
+      <html-output lines="1" inline="False"><![CDATA[<a name=startoftest21-2020-06-17T13:29:24.2586780Z id=startoftest21-2020-06-17T13:29:24.2586780Z></a>]]></html-output>
+      <text-output output-type="UserText">
+        <![CDATA[Generating Connection Test data...
+Performing standard Connection Test...
+Performing Logic Tests (phase 1)...
+Performing Logic Tests (phase 2)...
+Analysing Connection Test results...
+Analysing Logic Tests (phase 1)...
+Analysing Logic Tests (phase 2)...
+Running additional external hardware interaction tests...
+]]>
+      </text-output>
+      <html-output lines="0" inline="False">
+        <![CDATA[<h2 class="ct_allfaults"><a href="javascript:ShowFullConnTestOutput('C:\\Users\\Nick\\AppData\\Local\\Temp\\dmbxgj0g.0l0\\10199_637280009689789873')">
+  <FullConnTestOutput>Show full output data</FullConnTestOutput>
+</a></h2><br />]]>
+      </html-output>
+      <conntest-errors>No errors</conntest-errors>
+      <text-output output-type="Pass">
+        <![CDATA[CONNTEST passed
+]]>
+      </text-output>
+      <plain-text>
+        Generating Connection Test data...
+        Performing standard Connection Test...
+        Performing Logic Tests (phase 1)...
+        Performing Logic Tests (phase 2)...
+        Analysing Connection Test results...
+        Analysing Logic Tests (phase 1)...
+        Analysing Logic Tests (phase 2)...
+        Running additional external hardware interaction tests...
+        CONNTEST passed
+      </plain-text>
+      <result value="Passed" />
+      <time-taken>155</time-taken>
+    </testfunction>
+  </testgroup>
+  <testgroup name="SRAM Test">
+    <testfunction name="IC5.Test">
+      <html-output lines="1" inline="False"><![CDATA[<a name=startoftest22-2020-06-17T13:29:24.2586780Z id=startoftest22-2020-06-17T13:29:24.2586780Z></a>]]></html-output>
+      <text-output output-type="UserText"><![CDATA[Testing SRAM Device ]]></text-output>
+      <html-output lines="0" inline="True"><![CDATA[<a href="component:XJDemo,IC5" onmousedown="ShowComponentMenu(event, 'XJDemo,IC5')">IC5</a>]]></html-output>
+      <circuit-refs>
+        <device-ref board="XJDemo" device="IC5" />
+      </circuit-refs>
+      <text-output output-type="UserText">
+        <![CDATA[...
+Calling MemTest...
+Starting Optimised Address Bus &amp; Data Bus Test..
+Optimised Addr &amp; Data test Passed
+Moving on to Chip Enable test...
+Testing nOE...
+]]>
+      </text-output>
+      <text-output output-type="Pass">
+        <![CDATA[IC5.Test passed
+]]>
+      </text-output>
+      <plain-text>
+        Testing SRAM Device IC5...
+        Calling MemTest...
+        Starting Optimised Address Bus &amp; Data Bus Test..
+        Optimised Addr &amp; Data test Passed
+        Moving on to Chip Enable test...
+        Testing nOE...
+        IC5.Test passed
+      </plain-text>
+      <result value="Passed" />
+      <time-taken>59</time-taken>
+    </testfunction>
+  </testgroup>
+  <testgroup name="Flash Tests">
+    <testfunction name="ProgrammedFlashCheck">
+      <html-output lines="1" inline="False"><![CDATA[<a name=startoftest23-2020-06-17T13:29:24.2586780Z id=startoftest23-2020-06-17T13:29:24.2586780Z></a>]]></html-output>
+      <text-output output-type="UserText">
+        <![CDATA[Saving flash from address 0x0 to 0x7 (0x8 addresses) into variable.
+100% read complete
+]]>
+      </text-output>
+      <text-output output-type="Pass">
+        <![CDATA[ProgrammedFlashCheck passed
+]]>
+      </text-output>
+      <plain-text>
+        Saving flash from address 0x0 to 0x7 (0x8 addresses) into variable.
+        100% read complete
+        ProgrammedFlashCheck passed
+      </plain-text>
+      <result value="Passed" />
+      <time-taken>89</time-taken>
+    </testfunction>
+    <testfunction name="IC3.TestNonDestructive">
+      <text-output output-type="Skip">
+        <![CDATA[IC3.TestNonDestructive skipped
+]]>
+      </text-output>
+      <plain-text>
+        IC3.TestNonDestructive skipped
+      </plain-text>
+      <result value="Skipped" />
+      <time-taken>0</time-taken>
+    </testfunction>
+    <testfunction name="IC3.TestDestructive">
+      <html-output lines="1" inline="False"><![CDATA[<a name=startoftest24-2020-06-17T13:29:24.2586780Z id=startoftest24-2020-06-17T13:29:24.2586780Z></a>]]></html-output>
+      <text-output output-type="UserText"><![CDATA[Testing Flash Device ]]></text-output>
+      <html-output lines="0" inline="True"><![CDATA[<a href="component:XJDemo,IC3" onmousedown="ShowComponentMenu(event, 'XJDemo,IC3')">IC3</a>]]></html-output>
+      <circuit-refs>
+        <device-ref board="XJDemo" device="IC3" />
+      </circuit-refs>
+      <text-output output-type="UserText">
+        <![CDATA[...
+Starting Read ID test...
+IDs verified
+Starting Destructive memory test
+Starting Optimised Address Bus &amp; Data Bus Test..
+Optimised Addr &amp; Data test Passed
+Testing Chip Enable
+Destructive Memory Test PASSED...
+]]>
+      </text-output>
+      <text-output output-type="Pass">
+        <![CDATA[IC3.TestDestructive passed
+]]>
+      </text-output>
+      <plain-text>
+        Testing Flash Device IC3...
+        Starting Read ID test...
+        IDs verified
+        Starting Destructive memory test
+        Starting Optimised Address Bus &amp; Data Bus Test..
+        Optimised Addr &amp; Data test Passed
+        Testing Chip Enable
+        Destructive Memory Test PASSED...
+        IC3.TestDestructive passed
+      </plain-text>
+      <result value="Passed" />
+      <time-taken>406</time-taken>
+    </testfunction>
+  </testgroup>
+  <testgroup name="I2C PROM Tests">
+    <testfunction name="IC7.Test">
+      <html-output lines="1" inline="False"><![CDATA[<a name=startoftest25-2020-06-17T13:29:24.2586780Z id=startoftest25-2020-06-17T13:29:24.2586780Z></a>]]></html-output>
+      <text-output output-type="UserText"><![CDATA[Testing I2C EEPROM ]]></text-output>
+      <html-output lines="0" inline="True"><![CDATA[<a href="component:XJDemo,IC7" onmousedown="ShowComponentMenu(event, 'XJDemo,IC7')">IC7</a>]]></html-output>
+      <circuit-refs>
+        <device-ref board="XJDemo" device="IC7" />
+      </circuit-refs>
+      <text-output output-type="UserText">
+        <![CDATA[...
+Device ]]>
+      </text-output>
+      <html-output lines="0" inline="True"><![CDATA[<a href="component:XJDemo,IC7" onmousedown="ShowComponentMenu(event, 'XJDemo,IC7')">IC7</a>]]></html-output>
+      <circuit-refs>
+        <device-ref board="XJDemo" device="IC7" />
+      </circuit-refs>
+      <text-output output-type="UserText">
+        <![CDATA[ successfully acknowledged I2C address 0xA0.
+Read data from PROM.
+]]>
+      </text-output>
+      <text-output output-type="Pass">
+        <![CDATA[IC7.Test passed
+]]>
+      </text-output>
+      <plain-text>
+        Testing I2C EEPROM IC7...
+        Device IC7 successfully acknowledged I2C address 0xA0.
+        Read data from PROM.
+        IC7.Test passed
+      </plain-text>
+      <result value="Passed" />
+      <time-taken>78</time-taken>
+    </testfunction>
+    <testfunction name="EEPROM_PIO_Test">
+      <html-output lines="1" inline="False"><![CDATA[<a name=startoftest26-2020-06-17T13:29:24.2586780Z id=startoftest26-2020-06-17T13:29:24.2586780Z></a>]]></html-output>
+      <text-output output-type="UserText">
+        <![CDATA[Current TCK frequency is 10000000 Hz.
+Setting TCK frequency to 400000 Hz for max PIO I2C of 200000 Hz.
+
+Testing I2C EEPROM ]]>
+      </text-output>
+      <html-output lines="0" inline="True"><![CDATA[<a href="component:XJDemo,IC7" onmousedown="ShowComponentMenu(event, 'XJDemo,IC7')">IC7</a>]]></html-output>
+      <circuit-refs>
+        <device-ref board="XJDemo" device="IC7" />
+      </circuit-refs>
+      <text-output output-type="UserText">
+        <![CDATA[...
+Device ]]>
+      </text-output>
+      <html-output lines="0" inline="True"><![CDATA[<a href="component:XJDemo,IC7" onmousedown="ShowComponentMenu(event, 'XJDemo,IC7')">IC7</a>]]></html-output>
+      <circuit-refs>
+        <device-ref board="XJDemo" device="IC7" />
+      </circuit-refs>
+      <text-output output-type="UserText">
+        <![CDATA[ successfully acknowledged I2C address 0xA0.
+Read data from PROM.
+Restoring TCK frequency to 10000000 Hz.
+]]>
+      </text-output>
+      <text-output output-type="Pass">
+        <![CDATA[EEPROM_PIO_Test passed
+]]>
+      </text-output>
+      <plain-text>
+        Current TCK frequency is 10000000 Hz.
+        Setting TCK frequency to 400000 Hz for max PIO I2C of 200000 Hz.
+
+        Testing I2C EEPROM IC7...
+        Device IC7 successfully acknowledged I2C address 0xA0.
+        Read data from PROM.
+        Restoring TCK frequency to 10000000 Hz.
+        EEPROM_PIO_Test passed
+      </plain-text>
+      <result value="Passed" />
+      <time-taken>200</time-taken>
+    </testfunction>
+  </testgroup>
+  <testgroup name="Crystal Oscillator Test">
+    <testfunction name="Y1.TestOscillator">
+      <html-output lines="1" inline="False"><![CDATA[<a name=startoftest27-2020-06-17T13:29:24.2586780Z id=startoftest27-2020-06-17T13:29:24.2586780Z></a>]]></html-output>
+      <text-output output-type="UserText"><![CDATA[Testing Oscillator ]]></text-output>
+      <html-output lines="0" inline="True"><![CDATA[<a href="component:XJDemo,Y1" onmousedown="ShowComponentMenu(event, 'XJDemo,Y1')">Y1</a>]]></html-output>
+      <circuit-refs>
+        <device-ref board="XJDemo" device="Y1" />
+      </circuit-refs>
+      <text-output output-type="UserText">
+        <![CDATA[...
+    Oscillator test took 88 ms
+    Oscillator output pin 1 detected 148 transitions - passed
+]]>
+      </text-output>
+      <text-output output-type="Pass">
+        <![CDATA[Y1.TestOscillator passed
+]]>
+      </text-output>
+      <plain-text>
+        Testing Oscillator Y1...
+        Oscillator test took 88 ms
+        Oscillator output pin 1 detected 148 transitions - passed
+        Y1.TestOscillator passed
+      </plain-text>
+      <result value="Passed" />
+      <time-taken>109</time-taken>
+    </testfunction>
+    <testfunction name="Y1FrequencyTest">
+      <html-output lines="1" inline="False"><![CDATA[<a name=startoftest28-2020-06-17T13:29:24.2586780Z id=startoftest28-2020-06-17T13:29:24.2586780Z></a>]]></html-output>
+      <text-output output-type="UserText"><![CDATA[Checking frequency on ]]></text-output>
+      <html-output lines="0" inline="True"><![CDATA[<a href="component:XJDemo,CN1" onmousedown="ShowComponentMenu(event, 'XJDemo,CN1')">CN1</a>]]></html-output>
+      <circuit-refs>
+        <device-ref board="XJDemo" device="CN1" />
+      </circuit-refs>
+      <text-output output-type="UserText"><![CDATA[ pin ]]></text-output>
+      <html-output lines="0" inline="True"><![CDATA[<a href="pin:XJDemo,CN1,17" onmousedown="ShowPinMenu(event, 'XJDemo,CN1,17')">17</a>]]></html-output>
+      <circuit-refs>
+        <pin-ref board="XJDemo" device="CN1" pin="17" />
+      </circuit-refs>
+      <text-output output-type="UserText">
+        <![CDATA[ using XJLink2 frequency measurement.
+Frequency read: 3686271 Hz - within tolerance.
+]]>
+      </text-output>
+      <text-output output-type="Pass">
+        <![CDATA[Y1FrequencyTest passed
+]]>
+      </text-output>
+      <plain-text>
+        Checking frequency on CN1 pin 17 using XJLink2 frequency measurement.
+        Frequency read: 3686271 Hz - within tolerance.
+        Y1FrequencyTest passed
+      </plain-text>
+      <result value="Passed" />
+      <time-taken>1029</time-taken>
+    </testfunction>
+  </testgroup>
+  <testgroup name="ADC and Voltage Tests">
+    <testfunction name="IC6.IIC_CheckPresent">
+      <html-output lines="1" inline="False"><![CDATA[<a name=startoftest29-2020-06-17T13:29:24.2586780Z id=startoftest29-2020-06-17T13:29:24.2586780Z></a>]]></html-output>
+      <text-output output-type="UserText"><![CDATA[Device ]]></text-output>
+      <html-output lines="0" inline="True"><![CDATA[<a href="component:XJDemo,IC6" onmousedown="ShowComponentMenu(event, 'XJDemo,IC6')">IC6</a>]]></html-output>
+      <circuit-refs>
+        <device-ref board="XJDemo" device="IC6" />
+      </circuit-refs>
+      <text-output output-type="UserText">
+        <![CDATA[ successfully acknowledged I2C address 0x90.
+]]>
+      </text-output>
+      <text-output output-type="Pass">
+        <![CDATA[IC6.IIC_CheckPresent passed
+]]>
+      </text-output>
+      <plain-text>
+        Device IC6 successfully acknowledged I2C address 0x90.
+        IC6.IIC_CheckPresent passed
+      </plain-text>
+      <result value="Passed" />
+      <time-taken>66</time-taken>
+    </testfunction>
+    <testfunction name="ADC_Test">
+      <html-output lines="1" inline="False"><![CDATA[<a name=startoftest30-2020-06-17T13:29:24.2586780Z id=startoftest30-2020-06-17T13:29:24.2586780Z></a>]]></html-output>
+      <text-output output-type="UserText"><![CDATA[Checking the voltage on ADC (]]></text-output>
+      <html-output lines="0" inline="True"><![CDATA[<a href="component:XJDemo,IC6" onmousedown="ShowComponentMenu(event, 'XJDemo,IC6')">IC6</a>]]></html-output>
+      <circuit-refs>
+        <device-ref board="XJDemo" device="IC6" />
+      </circuit-refs>
+      <text-output output-type="UserText">
+        <![CDATA[) channel 1.
+PASSED: Voltage (1622mV) within tolerance.
+
+Checking the current in ]]>
+      </text-output>
+      <html-output lines="0" inline="True"><![CDATA[<a href="component:XJDemo,D1" onmousedown="ShowComponentMenu(event, 'XJDemo,D1')">D1</a>]]></html-output>
+      <circuit-refs>
+        <device-ref board="XJDemo" device="D1" />
+      </circuit-refs>
+      <text-output output-type="UserText">
+        <![CDATA[.
+Current in D1 = 4 mA.
+
+Checking the voltage on ADC (]]>
+      </text-output>
+      <html-output lines="0" inline="True"><![CDATA[<a href="component:XJDemo,IC6" onmousedown="ShowComponentMenu(event, 'XJDemo,IC6')">IC6</a>]]></html-output>
+      <circuit-refs>
+        <device-ref board="XJDemo" device="IC6" />
+      </circuit-refs>
+      <text-output output-type="UserText"><![CDATA[) channel 0, connected to variable resistor (]]></text-output>
+      <html-output lines="0" inline="True"><![CDATA[<a href="component:XJDemo,R3" onmousedown="ShowComponentMenu(event, 'XJDemo,R3')">R3</a>]]></html-output>
+      <circuit-refs>
+        <device-ref board="XJDemo" device="R3" />
+      </circuit-refs>
+      <text-output output-type="UserText">
+        <![CDATA[).
+Turn the Variable Resistor to change the voltage
+Press the spacebar to pass or any other key to fail.
+Thumbwheel voltage = 1197 mV (ADC +/- 10 mV), 1205 mV (XJLink)       
+]]>
+      </text-output>
+      <text-output output-type="Pass">
+        <![CDATA[ADC_Test passed
+]]>
+      </text-output>
+      <plain-text>
+        Checking the voltage on ADC (IC6) channel 1.
+        PASSED: Voltage (1622mV) within tolerance.
+
+        Checking the current in D1.
+        Current in D1 = 4 mA.
+
+        Checking the voltage on ADC (IC6) channel 0, connected to variable resistor (R3).
+        Turn the Variable Resistor to change the voltage
+        Press the spacebar to pass or any other key to fail.
+        Thumbwheel voltage = 1197 mV (ADC +/- 10 mV), 1205 mV (XJLink)
+        ADC_Test passed
+      </plain-text>
+      <result value="Passed" />
+      <time-taken>5944</time-taken>
+    </testfunction>
+  </testgroup>
+  <testgroup name="Push Button Test">
+    <testfunction name="SW1.Test">
+      <html-output lines="1" inline="False"><![CDATA[<a name=startoftest31-2020-06-17T13:29:24.2586780Z id=startoftest31-2020-06-17T13:29:24.2586780Z></a>]]></html-output>
+      <text-output output-type="UserText"><![CDATA[Press button ]]></text-output>
+      <html-output lines="0" inline="True"><![CDATA[<a href="component:XJDemo,SW1" onmousedown="ShowComponentMenu(event, 'XJDemo,SW1')">SW1</a>]]></html-output>
+      <circuit-refs>
+        <device-ref board="XJDemo" device="SW1" />
+      </circuit-refs>
+      <text-output output-type="UserText">
+        <![CDATA[.  Press any key to fail.
+Release button ]]>
+      </text-output>
+      <html-output lines="0" inline="True"><![CDATA[<a href="component:XJDemo,SW1" onmousedown="ShowComponentMenu(event, 'XJDemo,SW1')">SW1</a>]]></html-output>
+      <circuit-refs>
+        <device-ref board="XJDemo" device="SW1" />
+      </circuit-refs>
+      <text-output output-type="UserText">
+        <![CDATA[.  Press any key to fail.
+]]>
+      </text-output>
+      <text-output output-type="Pass">
+        <![CDATA[SW1.Test passed
+]]>
+      </text-output>
+      <plain-text>
+        Press button SW1.  Press any key to fail.
+        Release button SW1.  Press any key to fail.
+        SW1.Test passed
+      </plain-text>
+      <result value="Passed" />
+      <time-taken>2497</time-taken>
+    </testfunction>
+  </testgroup>
+  <testgroup name="LED Tests">
+    <testfunction name="D1.Test">
+      <html-output lines="1" inline="False"><![CDATA[<a name=startoftest32-2020-06-17T13:29:24.2586780Z id=startoftest32-2020-06-17T13:29:24.2586780Z></a>]]></html-output>
+      <text-output output-type="UserText"><![CDATA[LED ]]></text-output>
+      <html-output lines="0" inline="True"><![CDATA[<a href="component:XJDemo,D1" onmousedown="ShowComponentMenu(event, 'XJDemo,D1')">D1</a>]]></html-output>
+      <circuit-refs>
+        <device-ref board="XJDemo" device="D1" />
+      </circuit-refs>
+      <text-output output-type="UserText">
+        <![CDATA[ passed.
+]]>
+      </text-output>
+      <text-output output-type="Pass">
+        <![CDATA[D1.Test passed
+]]>
+      </text-output>
+      <plain-text>
+        LED D1 passed.
+        D1.Test passed
+      </plain-text>
+      <result value="Passed" />
+      <time-taken>1689</time-taken>
+    </testfunction>
+    <testfunction name="D2.Test">
+      <html-output lines="1" inline="False"><![CDATA[<a name=startoftest33-2020-06-17T13:29:24.2586780Z id=startoftest33-2020-06-17T13:29:24.2586780Z></a>]]></html-output>
+      <text-output output-type="UserText"><![CDATA[LED ]]></text-output>
+      <html-output lines="0" inline="True"><![CDATA[<a href="component:XJDemo,D2" onmousedown="ShowComponentMenu(event, 'XJDemo,D2')">D2</a>]]></html-output>
+      <circuit-refs>
+        <device-ref board="XJDemo" device="D2" />
+      </circuit-refs>
+      <text-output output-type="UserText">
+        <![CDATA[ passed.
+]]>
+      </text-output>
+      <text-output output-type="Pass">
+        <![CDATA[D2.Test passed
+]]>
+      </text-output>
+      <plain-text>
+        LED D2 passed.
+        D2.Test passed
+      </plain-text>
+      <result value="Passed" />
+      <time-taken>435</time-taken>
+    </testfunction>
+    <testfunction name="D3.Test">
+      <html-output lines="1" inline="False"><![CDATA[<a name=startoftest34-2020-06-17T13:29:24.2586780Z id=startoftest34-2020-06-17T13:29:24.2586780Z></a>]]></html-output>
+      <text-output output-type="UserText"><![CDATA[LED ]]></text-output>
+      <html-output lines="0" inline="True"><![CDATA[<a href="component:XJDemo,D3" onmousedown="ShowComponentMenu(event, 'XJDemo,D3')">D3</a>]]></html-output>
+      <circuit-refs>
+        <device-ref board="XJDemo" device="D3" />
+      </circuit-refs>
+      <text-output output-type="UserText">
+        <![CDATA[ passed.
+]]>
+      </text-output>
+      <text-output output-type="Pass">
+        <![CDATA[D3.Test passed
+]]>
+      </text-output>
+      <plain-text>
+        LED D3 passed.
+        D3.Test passed
+      </plain-text>
+      <result value="Passed" />
+      <time-taken>422</time-taken>
+    </testfunction>
+    <testfunction name="D4.Test">
+      <html-output lines="1" inline="False"><![CDATA[<a name=startoftest35-2020-06-17T13:29:24.2586780Z id=startoftest35-2020-06-17T13:29:24.2586780Z></a>]]></html-output>
+      <text-output output-type="UserText"><![CDATA[LED ]]></text-output>
+      <html-output lines="0" inline="True"><![CDATA[<a href="component:XJDemo,D4" onmousedown="ShowComponentMenu(event, 'XJDemo,D4')">D4</a>]]></html-output>
+      <circuit-refs>
+        <device-ref board="XJDemo" device="D4" />
+      </circuit-refs>
+      <text-output output-type="UserText">
+        <![CDATA[ passed.
+]]>
+      </text-output>
+      <text-output output-type="Pass">
+        <![CDATA[D4.Test passed
+]]>
+      </text-output>
+      <plain-text>
+        LED D4 passed.
+        D4.Test passed
+      </plain-text>
+      <result value="Passed" />
+      <time-taken>689</time-taken>
+    </testfunction>
+  </testgroup>
+  <testgroup name="Program Flash">
+    <testfunction name="VerifyIC3">
+      <text-output output-type="Skip">
+        <![CDATA[VerifyIC3 skipped
+]]>
+      </text-output>
+      <plain-text>
+        VerifyIC3 skipped
+      </plain-text>
+      <result value="Skipped" />
+      <time-taken>0</time-taken>
+    </testfunction>
+    <testfunction name="EraseIC3">
+      <html-output lines="1" inline="False"><![CDATA[<a name=startoftest36-2020-06-17T13:29:24.2586780Z id=startoftest36-2020-06-17T13:29:24.2586780Z></a>]]></html-output>
+      <text-output output-type="UserText"><![CDATA[Erasing NOR flash (]]></text-output>
+      <html-output lines="0" inline="True"><![CDATA[<a href="component:XJDemo,IC3" onmousedown="ShowComponentMenu(event, 'XJDemo,IC3')">IC3</a>]]></html-output>
+      <circuit-refs>
+        <device-ref board="XJDemo" device="IC3" />
+      </circuit-refs>
+      <text-output output-type="UserText">
+        <![CDATA[)...
+Erasing all flash contents.
+Flash erased.
+]]>
+      </text-output>
+      <text-output output-type="Pass">
+        <![CDATA[EraseIC3 passed
+]]>
+      </text-output>
+      <plain-text>
+        Erasing NOR flash (IC3)...
+        Erasing all flash contents.
+        Flash erased.
+        EraseIC3 passed
+      </plain-text>
+      <result value="Passed" />
+      <time-taken>1274</time-taken>
+    </testfunction>
+    <testfunction name="ProgramIC3">
+      <html-output lines="1" inline="False"><![CDATA[<a name=startoftest37-2020-06-17T13:29:24.2586780Z id=startoftest37-2020-06-17T13:29:24.2586780Z></a>]]></html-output>
+      <text-output output-type="UserText"><![CDATA[Programming NOR flash (]]></text-output>
+      <html-output lines="0" inline="True"><![CDATA[<a href="component:XJDemo,IC3" onmousedown="ShowComponentMenu(event, 'XJDemo,IC3')">IC3</a>]]></html-output>
+      <circuit-refs>
+        <device-ref board="XJDemo" device="IC3" />
+      </circuit-refs>
+      <text-output output-type="UserText">
+        <![CDATA[)...
+Programming flash from file ..\Programming Files\data.bin
+Programming, using bypass method, from address 0x0 to 0x7FFF (0x8000 addresses)
+Programming complete.                             
+]]>
+      </text-output>
+      <text-output output-type="Pass">
+        <![CDATA[ProgramIC3 passed
+]]>
+      </text-output>
+      <plain-text>
+        Programming NOR flash (IC3)...
+        Programming flash from file ..\Programming Files\data.bin
+        Programming, using bypass method, from address 0x0 to 0x7FFF (0x8000 addresses)
+        Programming complete.
+        ProgramIC3 passed
+      </plain-text>
+      <result value="Passed" />
+      <time-taken>11426</time-taken>
+    </testfunction>
+    <testfunction name="VerifyIC3 (Post programming)">
+      <html-output lines="1" inline="False"><![CDATA[<a name=startoftest38-2020-06-17T13:29:24.2586780Z id=startoftest38-2020-06-17T13:29:24.2586780Z></a>]]></html-output>
+      <text-output output-type="UserText"><![CDATA[Verifying NOR flash (]]></text-output>
+      <html-output lines="0" inline="True"><![CDATA[<a href="component:XJDemo,IC3" onmousedown="ShowComponentMenu(event, 'XJDemo,IC3')">IC3</a>]]></html-output>
+      <circuit-refs>
+        <device-ref board="XJDemo" device="IC3" />
+      </circuit-refs>
+      <text-output output-type="UserText">
+        <![CDATA[)...
+Verifying flash against file ..\Programming Files\data.bin
+Verifying from address 0x0 to 0x7FFF (0x8000 addresses)
+Verified OK.                                    
+]]>
+      </text-output>
+      <text-output output-type="Pass">
+        <![CDATA[VerifyIC3 (Post programming) passed
+]]>
+      </text-output>
+      <plain-text>
+        Verifying NOR flash (IC3)...
+        Verifying flash against file ..\Programming Files\data.bin
+        Verifying from address 0x0 to 0x7FFF (0x8000 addresses)
+        Verified OK.
+        VerifyIC3 (Post programming) passed
+      </plain-text>
+      <result value="Passed" />
+      <time-taken>7285</time-taken>
+    </testfunction>
+  </testgroup>
+  <testgroup name="Program CPLD">
+    <testfunction name="RunStaplFile">
+      <html-output lines="1" inline="False"><![CDATA[<a name=startoftest39-2020-06-17T13:29:24.2586780Z id=startoftest39-2020-06-17T13:29:24.2586780Z></a>]]></html-output>
+      <text-output output-type="UserText">
+        <![CDATA[Programming STAPL File: ..\Programming Files\FlashLed.stapl
+Jam STAPL Player Version 2.3
+Copyright (C) 1997-2000 Altera Corporation
+
+Set TCK frequency to 1 MHz
+Successful File Execution.
+Exit code = 0... Success
+STAPL Programming complete.
+]]>
+      </text-output>
+      <text-output output-type="Pass">
+        <![CDATA[RunStaplFile passed
+]]>
+      </text-output>
+      <plain-text>
+        Programming STAPL File: ..\Programming Files\FlashLed.stapl
+        Jam STAPL Player Version 2.3
+        Copyright (C) 1997-2000 Altera Corporation
+
+        Set TCK frequency to 1 MHz
+        Successful File Execution.
+        Exit code = 0... Success
+        STAPL Programming complete.
+        RunStaplFile passed
+      </plain-text>
+      <result value="Passed" />
+      <time-taken>9177</time-taken>
+    </testfunction>
+  </testgroup>
+  <testgroup name="Program Serial Number">
+    <testfunction name="WriteSerialNumber">
+      <html-output lines="1" inline="False"><![CDATA[<a name=startoftest40-2020-06-17T13:29:24.2586780Z id=startoftest40-2020-06-17T13:29:24.2586780Z></a>]]></html-output>
+      <text-output output-type="Pass">
+        <![CDATA[WriteSerialNumber passed
+]]>
+      </text-output>
+      <plain-text>
+        WriteSerialNumber passed
+      </plain-text>
+      <result value="Passed" />
+      <time-taken>454</time-taken>
+    </testfunction>
+  </testgroup>
+  <summary>
+    <text-output output-type="Pass">
+      <![CDATA[&gt;&gt;&gt;&gt; PASSED &lt;&lt;&lt;&lt;
+
+]]>
+    </text-output>
+    <html-output lines="15" inline="False">
+      <![CDATA[<table class="summary" id="summarytable">
+  <thead>
+    <tr>
+      <th>NAME</th>
+      <th>RESULT</th>
+      <th></th>
+      <th>TIME</th>
+    </tr>
+  </thead>
+  <tr id="summ_test26-2020-06-17T13:29:24.2586780Z">
+    <td class="firstcoltest">
+      <a href="javascript:ToggleTest('summ_test26-2020-06-17T13:29:24.2586780Z')">
+        <img src="resources:///closed.png" id="img_summ_test26-2020-06-17T13:29:24.2586780Z" class="ct_imgtoggle" />Enter Serial Number</a>
+    </td>
+    <td class="passed">Passed</td>
+    <td class="summarycol"></td>
+    <td class="testtime">4.231</td>
+  </tr>
+  <tr id="summ_test28-2020-06-17T13:29:24.2586780Z">
+    <td class="firstcoltest">
+      <a href="javascript:ToggleTest('summ_test28-2020-06-17T13:29:24.2586780Z')">
+        <img src="resources:///closed.png" id="img_summ_test28-2020-06-17T13:29:24.2586780Z" class="ct_imgtoggle" />Check Chain</a>
+    </td>
+    <td class="passed">Passed</td>
+    <td class="summarycol"></td>
+    <td class="testtime">0.232</td>
+  </tr>
+  <tr id="summ_test30-2020-06-17T13:29:24.2586780Z">
+    <td class="firstcoltest">
+      <a href="javascript:ToggleTest('summ_test30-2020-06-17T13:29:24.2586780Z')">
+        <img src="resources:///closed.png" id="img_summ_test30-2020-06-17T13:29:24.2586780Z" class="ct_imgtoggle" />Connection Test</a>
+    </td>
+    <td class="passed">Passed</td>
+    <td class="summarycol"></td>
+    <td class="testtime">0.155</td>
+  </tr>
+  <tr id="summ_test32-2020-06-17T13:29:24.2586780Z">
+    <td class="firstcoltest">
+      <a href="javascript:ToggleTest('summ_test32-2020-06-17T13:29:24.2586780Z')">
+        <img src="resources:///closed.png" id="img_summ_test32-2020-06-17T13:29:24.2586780Z" class="ct_imgtoggle" />SRAM Test</a>
+    </td>
+    <td class="passed">Passed</td>
+    <td class="summarycol"></td>
+    <td class="testtime">0.059</td>
+  </tr>
+  <tr id="summ_test34-2020-06-17T13:29:24.2586780Z">
+    <td class="firstcoltest">
+      <a href="javascript:ToggleTest('summ_test34-2020-06-17T13:29:24.2586780Z')">
+        <img src="resources:///closed.png" id="img_summ_test34-2020-06-17T13:29:24.2586780Z" class="ct_imgtoggle" />Flash Tests</a>
+    </td>
+    <td class="passed">Passed</td>
+    <td class="summarycol"></td>
+    <td class="testtime">0.496</td>
+  </tr>
+  <tr id="summ_test36-2020-06-17T13:29:24.2586780Z">
+    <td class="firstcoltest">
+      <a href="javascript:ToggleTest('summ_test36-2020-06-17T13:29:24.2586780Z')">
+        <img src="resources:///closed.png" id="img_summ_test36-2020-06-17T13:29:24.2586780Z" class="ct_imgtoggle" />I2C PROM Tests</a>
+    </td>
+    <td class="passed">Passed</td>
+    <td class="summarycol"></td>
+    <td class="testtime">0.279</td>
+  </tr>
+  <tr id="summ_test38-2020-06-17T13:29:24.2586780Z">
+    <td class="firstcoltest">
+      <a href="javascript:ToggleTest('summ_test38-2020-06-17T13:29:24.2586780Z')">
+        <img src="resources:///closed.png" id="img_summ_test38-2020-06-17T13:29:24.2586780Z" class="ct_imgtoggle" />Crystal Oscillator Test</a>
+    </td>
+    <td class="passed">Passed</td>
+    <td class="summarycol"></td>
+    <td class="testtime">1.139</td>
+  </tr>
+  <tr id="summ_test40-2020-06-17T13:29:24.2586780Z">
+    <td class="firstcoltest">
+      <a href="javascript:ToggleTest('summ_test40-2020-06-17T13:29:24.2586780Z')">
+        <img src="resources:///closed.png" id="img_summ_test40-2020-06-17T13:29:24.2586780Z" class="ct_imgtoggle" />ADC and Voltage Tests</a>
+    </td>
+    <td class="passed">Passed</td>
+    <td class="summarycol"></td>
+    <td class="testtime">6.011</td>
+  </tr>
+  <tr id="summ_test42-2020-06-17T13:29:24.2586780Z">
+    <td class="firstcoltest">
+      <a href="javascript:ToggleTest('summ_test42-2020-06-17T13:29:24.2586780Z')">
+        <img src="resources:///closed.png" id="img_summ_test42-2020-06-17T13:29:24.2586780Z" class="ct_imgtoggle" />Push Button Test</a>
+    </td>
+    <td class="passed">Passed</td>
+    <td class="summarycol"></td>
+    <td class="testtime">2.497</td>
+  </tr>
+  <tr id="summ_test44-2020-06-17T13:29:24.2586780Z">
+    <td class="firstcoltest">
+      <a href="javascript:ToggleTest('summ_test44-2020-06-17T13:29:24.2586780Z')">
+        <img src="resources:///closed.png" id="img_summ_test44-2020-06-17T13:29:24.2586780Z" class="ct_imgtoggle" />LED Tests</a>
+    </td>
+    <td class="passed">Passed</td>
+    <td class="summarycol"></td>
+    <td class="testtime">3.238</td>
+  </tr>
+  <tr id="summ_test46-2020-06-17T13:29:24.2586780Z">
+    <td class="firstcoltest">
+      <a href="javascript:ToggleTest('summ_test46-2020-06-17T13:29:24.2586780Z')">
+        <img src="resources:///closed.png" id="img_summ_test46-2020-06-17T13:29:24.2586780Z" class="ct_imgtoggle" />Program Flash</a>
+    </td>
+    <td class="passed">Passed</td>
+    <td class="summarycol"></td>
+    <td class="testtime">19.986</td>
+  </tr>
+  <tr id="summ_test48-2020-06-17T13:29:24.2586780Z">
+    <td class="firstcoltest">
+      <a href="javascript:ToggleTest('summ_test48-2020-06-17T13:29:24.2586780Z')">
+        <img src="resources:///closed.png" id="img_summ_test48-2020-06-17T13:29:24.2586780Z" class="ct_imgtoggle" />Program CPLD</a>
+    </td>
+    <td class="passed">Passed</td>
+    <td class="summarycol"></td>
+    <td class="testtime">9.177</td>
+  </tr>
+  <tr id="summ_test50-2020-06-17T13:29:24.2586780Z">
+    <td class="firstcoltest">
+      <a href="javascript:ToggleTest('summ_test50-2020-06-17T13:29:24.2586780Z')">
+        <img src="resources:///closed.png" id="img_summ_test50-2020-06-17T13:29:24.2586780Z" class="ct_imgtoggle" />Program Serial Number</a>
+    </td>
+    <td class="passed">Passed</td>
+    <td class="summarycol"></td>
+    <td class="testtime">0.454</td>
+  </tr>
+  <tr id="summ_test_totaltime">
+    <th>TOTAL TIME</th>
+    <th> </th>
+    <th> </th>
+    <th class="totaltime">47.960</th>
+  </tr>
+</table>]]>
+    </html-output>
+  </summary>
+  <header>
+    <![CDATA[****************************************
+Serial number set to 567567 by XJRunner
+****************************************
+========================================
+Test system output
+========================================
+]]>
+  </header>
+  <testruninfo>
+    <project-description>Demonstration hardware</project-description>
+    <user>ADMINISTRATOR</user>
+    <serial>567567</serial>
+    <xjlink-serial>10199</xjlink-serial>
+    <xjlink-name />
+    <result>Passed</result>
+    <time-taken>47960</time-taken>
+    <xjtag-version>3.10.0.0</xjtag-version>
+  </testruninfo>
+  <snippets>
+    <snippet key="summ_test26-2020-06-17T13:29:24.2586780Z">
+      <snippet-html>
+        <![CDATA[<tr id="summ_func48-2020-06-17T13:29:24.2586780Z">
+  <td class="firstcolfunc">NEW_SERIAL_NUMBER</td>
+  <td class="passed">Passed</td>
+  <td class="summarycol">
+    <a href="javascript:ScrollTo('startoftest19-2020-06-17T13:29:24.2586780Z')">
+      <img src="resources:///test_link.png" class="ct_imglink" />
+    </a>
+  </td>
+  <td class="testtime">4.231</td>
+</tr>]]>
+      </snippet-html>
+    </snippet>
+    <snippet key="summ_test28-2020-06-17T13:29:24.2586780Z">
+      <snippet-html>
+        <![CDATA[<tr id="summ_func50-2020-06-17T13:29:24.2586780Z">
+  <td class="firstcolfunc">CheckChain</td>
+  <td class="passed">Passed</td>
+  <td class="summarycol">
+    <a href="javascript:ScrollTo('startoftest20-2020-06-17T13:29:24.2586780Z')">
+      <img src="resources:///test_link.png" class="ct_imglink" />
+    </a>
+  </td>
+  <td class="testtime">0.232</td>
+</tr>]]>
+      </snippet-html>
+    </snippet>
+    <snippet key="summ_test30-2020-06-17T13:29:24.2586780Z">
+      <snippet-html>
+        <![CDATA[<tr id="summ_func52-2020-06-17T13:29:24.2586780Z">
+  <td class="firstcolfunc">CONNTEST</td>
+  <td class="passed">Passed</td>
+  <td class="summarycol">
+    <a href="javascript:ScrollTo('startoftest21-2020-06-17T13:29:24.2586780Z')">
+      <img src="resources:///test_link.png" class="ct_imglink" />
+    </a>
+  </td>
+  <td class="testtime">0.155</td>
+</tr>]]>
+      </snippet-html>
+    </snippet>
+    <snippet key="summ_test32-2020-06-17T13:29:24.2586780Z">
+      <snippet-html>
+        <![CDATA[<tr id="summ_func54-2020-06-17T13:29:24.2586780Z">
+  <td class="firstcolfunc">IC5.Test</td>
+  <td class="passed">Passed</td>
+  <td class="summarycol">
+    <a href="javascript:ScrollTo('startoftest22-2020-06-17T13:29:24.2586780Z')">
+      <img src="resources:///test_link.png" class="ct_imglink" />
+    </a>
+  </td>
+  <td class="testtime">0.059</td>
+</tr>]]>
+      </snippet-html>
+    </snippet>
+    <snippet key="summ_test34-2020-06-17T13:29:24.2586780Z">
+      <snippet-html>
+        <![CDATA[<tr id="summ_func56-2020-06-17T13:29:24.2586780Z">
+  <td class="firstcolfunc">ProgrammedFlashCheck</td>
+  <td class="passed">Passed</td>
+  <td class="summarycol">
+    <a href="javascript:ScrollTo('startoftest23-2020-06-17T13:29:24.2586780Z')">
+      <img src="resources:///test_link.png" class="ct_imglink" />
+    </a>
+  </td>
+  <td class="testtime">0.089</td>
+</tr>]]>
+      </snippet-html>
+      <snippet-html>
+        <![CDATA[<tr id="summ_func58-2020-06-17T13:29:24.2586780Z">
+  <td class="firstcolfunc">IC3.TestNonDestructive</td>
+  <td class="skipped">Skipped</td>
+  <td class="summarycol">
+    <a href="javascript:ScrollTo('startoftest23-2020-06-17T13:29:24.2586780Z')">
+      <img src="resources:///test_link.png" class="ct_imglink" />
+    </a>
+  </td>
+  <td class="testtime">0.000</td>
+</tr>]]>
+      </snippet-html>
+      <snippet-html>
+        <![CDATA[<tr id="summ_func60-2020-06-17T13:29:24.2586780Z">
+  <td class="firstcolfunc">IC3.TestDestructive</td>
+  <td class="passed">Passed</td>
+  <td class="summarycol">
+    <a href="javascript:ScrollTo('startoftest24-2020-06-17T13:29:24.2586780Z')">
+      <img src="resources:///test_link.png" class="ct_imglink" />
+    </a>
+  </td>
+  <td class="testtime">0.406</td>
+</tr>]]>
+      </snippet-html>
+    </snippet>
+    <snippet key="summ_test36-2020-06-17T13:29:24.2586780Z">
+      <snippet-html>
+        <![CDATA[<tr id="summ_func62-2020-06-17T13:29:24.2586780Z">
+  <td class="firstcolfunc">IC7.Test</td>
+  <td class="passed">Passed</td>
+  <td class="summarycol">
+    <a href="javascript:ScrollTo('startoftest25-2020-06-17T13:29:24.2586780Z')">
+      <img src="resources:///test_link.png" class="ct_imglink" />
+    </a>
+  </td>
+  <td class="testtime">0.078</td>
+</tr>]]>
+      </snippet-html>
+      <snippet-html>
+        <![CDATA[<tr id="summ_func64-2020-06-17T13:29:24.2586780Z">
+  <td class="firstcolfunc">EEPROM_PIO_Test</td>
+  <td class="passed">Passed</td>
+  <td class="summarycol">
+    <a href="javascript:ScrollTo('startoftest26-2020-06-17T13:29:24.2586780Z')">
+      <img src="resources:///test_link.png" class="ct_imglink" />
+    </a>
+  </td>
+  <td class="testtime">0.200</td>
+</tr>]]>
+      </snippet-html>
+    </snippet>
+    <snippet key="summ_test38-2020-06-17T13:29:24.2586780Z">
+      <snippet-html>
+        <![CDATA[<tr id="summ_func66-2020-06-17T13:29:24.2586780Z">
+  <td class="firstcolfunc">Y1.TestOscillator</td>
+  <td class="passed">Passed</td>
+  <td class="summarycol">
+    <a href="javascript:ScrollTo('startoftest27-2020-06-17T13:29:24.2586780Z')">
+      <img src="resources:///test_link.png" class="ct_imglink" />
+    </a>
+  </td>
+  <td class="testtime">0.109</td>
+</tr>]]>
+      </snippet-html>
+      <snippet-html>
+        <![CDATA[<tr id="summ_func68-2020-06-17T13:29:24.2586780Z">
+  <td class="firstcolfunc">Y1FrequencyTest</td>
+  <td class="passed">Passed</td>
+  <td class="summarycol">
+    <a href="javascript:ScrollTo('startoftest28-2020-06-17T13:29:24.2586780Z')">
+      <img src="resources:///test_link.png" class="ct_imglink" />
+    </a>
+  </td>
+  <td class="testtime">1.029</td>
+</tr>]]>
+      </snippet-html>
+    </snippet>
+    <snippet key="summ_test40-2020-06-17T13:29:24.2586780Z">
+      <snippet-html>
+        <![CDATA[<tr id="summ_func70-2020-06-17T13:29:24.2586780Z">
+  <td class="firstcolfunc">IC6.IIC_CheckPresent</td>
+  <td class="passed">Passed</td>
+  <td class="summarycol">
+    <a href="javascript:ScrollTo('startoftest29-2020-06-17T13:29:24.2586780Z')">
+      <img src="resources:///test_link.png" class="ct_imglink" />
+    </a>
+  </td>
+  <td class="testtime">0.066</td>
+</tr>]]>
+      </snippet-html>
+      <snippet-html>
+        <![CDATA[<tr id="summ_func72-2020-06-17T13:29:24.2586780Z">
+  <td class="firstcolfunc">ADC_Test</td>
+  <td class="passed">Passed</td>
+  <td class="summarycol">
+    <a href="javascript:ScrollTo('startoftest30-2020-06-17T13:29:24.2586780Z')">
+      <img src="resources:///test_link.png" class="ct_imglink" />
+    </a>
+  </td>
+  <td class="testtime">5.944</td>
+</tr>]]>
+      </snippet-html>
+    </snippet>
+    <snippet key="summ_test42-2020-06-17T13:29:24.2586780Z">
+      <snippet-html>
+        <![CDATA[<tr id="summ_func74-2020-06-17T13:29:24.2586780Z">
+  <td class="firstcolfunc">SW1.Test</td>
+  <td class="passed">Passed</td>
+  <td class="summarycol">
+    <a href="javascript:ScrollTo('startoftest31-2020-06-17T13:29:24.2586780Z')">
+      <img src="resources:///test_link.png" class="ct_imglink" />
+    </a>
+  </td>
+  <td class="testtime">2.497</td>
+</tr>]]>
+      </snippet-html>
+    </snippet>
+    <snippet key="summ_test44-2020-06-17T13:29:24.2586780Z">
+      <snippet-html>
+        <![CDATA[<tr id="summ_func76-2020-06-17T13:29:24.2586780Z">
+  <td class="firstcolfunc">D1.Test</td>
+  <td class="passed">Passed</td>
+  <td class="summarycol">
+    <a href="javascript:ScrollTo('startoftest32-2020-06-17T13:29:24.2586780Z')">
+      <img src="resources:///test_link.png" class="ct_imglink" />
+    </a>
+  </td>
+  <td class="testtime">1.689</td>
+</tr>]]>
+      </snippet-html>
+      <snippet-html>
+        <![CDATA[<tr id="summ_func78-2020-06-17T13:29:24.2586780Z">
+  <td class="firstcolfunc">D2.Test</td>
+  <td class="passed">Passed</td>
+  <td class="summarycol">
+    <a href="javascript:ScrollTo('startoftest33-2020-06-17T13:29:24.2586780Z')">
+      <img src="resources:///test_link.png" class="ct_imglink" />
+    </a>
+  </td>
+  <td class="testtime">0.435</td>
+</tr>]]>
+      </snippet-html>
+      <snippet-html>
+        <![CDATA[<tr id="summ_func80-2020-06-17T13:29:24.2586780Z">
+  <td class="firstcolfunc">D3.Test</td>
+  <td class="passed">Passed</td>
+  <td class="summarycol">
+    <a href="javascript:ScrollTo('startoftest34-2020-06-17T13:29:24.2586780Z')">
+      <img src="resources:///test_link.png" class="ct_imglink" />
+    </a>
+  </td>
+  <td class="testtime">0.422</td>
+</tr>]]>
+      </snippet-html>
+      <snippet-html>
+        <![CDATA[<tr id="summ_func82-2020-06-17T13:29:24.2586780Z">
+  <td class="firstcolfunc">D4.Test</td>
+  <td class="passed">Passed</td>
+  <td class="summarycol">
+    <a href="javascript:ScrollTo('startoftest35-2020-06-17T13:29:24.2586780Z')">
+      <img src="resources:///test_link.png" class="ct_imglink" />
+    </a>
+  </td>
+  <td class="testtime">0.689</td>
+</tr>]]>
+      </snippet-html>
+    </snippet>
+    <snippet key="summ_test46-2020-06-17T13:29:24.2586780Z">
+      <snippet-html>
+        <![CDATA[<tr id="summ_func84-2020-06-17T13:29:24.2586780Z">
+  <td class="firstcolfunc">VerifyIC3</td>
+  <td class="skipped">Skipped</td>
+  <td class="summarycol">
+    <a href="javascript:ScrollTo('startoftest35-2020-06-17T13:29:24.2586780Z')">
+      <img src="resources:///test_link.png" class="ct_imglink" />
+    </a>
+  </td>
+  <td class="testtime">0.000</td>
+</tr>]]>
+      </snippet-html>
+      <snippet-html>
+        <![CDATA[<tr id="summ_func86-2020-06-17T13:29:24.2586780Z">
+  <td class="firstcolfunc">EraseIC3</td>
+  <td class="passed">Passed</td>
+  <td class="summarycol">
+    <a href="javascript:ScrollTo('startoftest36-2020-06-17T13:29:24.2586780Z')">
+      <img src="resources:///test_link.png" class="ct_imglink" />
+    </a>
+  </td>
+  <td class="testtime">1.274</td>
+</tr>]]>
+      </snippet-html>
+      <snippet-html>
+        <![CDATA[<tr id="summ_func88-2020-06-17T13:29:24.2586780Z">
+  <td class="firstcolfunc">ProgramIC3</td>
+  <td class="passed">Passed</td>
+  <td class="summarycol">
+    <a href="javascript:ScrollTo('startoftest37-2020-06-17T13:29:24.2586780Z')">
+      <img src="resources:///test_link.png" class="ct_imglink" />
+    </a>
+  </td>
+  <td class="testtime">11.426</td>
+</tr>]]>
+      </snippet-html>
+      <snippet-html>
+        <![CDATA[<tr id="summ_func90-2020-06-17T13:29:24.2586780Z">
+  <td class="firstcolfunc">VerifyIC3 (Post programming)</td>
+  <td class="passed">Passed</td>
+  <td class="summarycol">
+    <a href="javascript:ScrollTo('startoftest38-2020-06-17T13:29:24.2586780Z')">
+      <img src="resources:///test_link.png" class="ct_imglink" />
+    </a>
+  </td>
+  <td class="testtime">7.285</td>
+</tr>]]>
+      </snippet-html>
+    </snippet>
+    <snippet key="summ_test48-2020-06-17T13:29:24.2586780Z">
+      <snippet-html>
+        <![CDATA[<tr id="summ_func92-2020-06-17T13:29:24.2586780Z">
+  <td class="firstcolfunc">RunStaplFile</td>
+  <td class="passed">Passed</td>
+  <td class="summarycol">
+    <a href="javascript:ScrollTo('startoftest39-2020-06-17T13:29:24.2586780Z')">
+      <img src="resources:///test_link.png" class="ct_imglink" />
+    </a>
+  </td>
+  <td class="testtime">9.177</td>
+</tr>]]>
+      </snippet-html>
+    </snippet>
+    <snippet key="summ_test50-2020-06-17T13:29:24.2586780Z">
+      <snippet-html>
+        <![CDATA[<tr id="summ_func94-2020-06-17T13:29:24.2586780Z">
+  <td class="firstcolfunc">WriteSerialNumber</td>
+  <td class="passed">Passed</td>
+  <td class="summarycol">
+    <a href="javascript:ScrollTo('startoftest40-2020-06-17T13:29:24.2586780Z')">
+      <img src="resources:///test_link.png" class="ct_imglink" />
+    </a>
+  </td>
+  <td class="testtime">0.454</td>
+</tr>]]>
+      </snippet-html>
+    </snippet>
+  </snippets>
+</testrun>

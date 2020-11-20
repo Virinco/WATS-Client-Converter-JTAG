@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{437ACFD4-862E-4C73-989C-C685A4BF0C8C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JTAGConverters</RootNamespace>
+    <AssemblyName>JTAGConverters</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Virinco.WATS.Converters.Standard, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\WATS.Client.5.1.159\lib\net35\Virinco.WATS.Converters.Standard.dll</HintPath>
+    </Reference>
+    <Reference Include="Virinco.WATS.Interface.MES, Version=5.1.0.159, Culture=neutral, PublicKeyToken=25abfe255fd31fdf, processorArchitecture=MSIL">
+      <HintPath>packages\WATS.Client.5.1.159\lib\net35\Virinco.WATS.Interface.MES.dll</HintPath>
+    </Reference>
+    <Reference Include="Virinco.WATS.Interface.TDM, Version=5.1.0.159, Culture=neutral, PublicKeyToken=25abfe255fd31fdf, processorArchitecture=MSIL">
+      <HintPath>packages\WATS.Client.5.1.159\lib\net35\Virinco.WATS.Interface.TDM.dll</HintPath>
+    </Reference>
+    <Reference Include="Virinco.WATS.Service.MES.Contract, Version=5.1.0.159, Culture=neutral, PublicKeyToken=3e36107bb2aa2c24, processorArchitecture=MSIL">
+      <HintPath>packages\WATS.Client.5.1.159\lib\net35\Virinco.WATS.Service.MES.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="Virinco.WATS.WATS-Core, Version=5.1.0.159, Culture=neutral, PublicKeyToken=40e2cae0ae7be54b, processorArchitecture=MSIL">
+      <HintPath>packages\WATS.Client.5.1.159\lib\net35\Virinco.WATS.WATS-Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConverterTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XJLogConverter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Examples\1234_14_25_32_10.08.2018_Pass.xjlog" />
+    <None Include="Examples\55804022_XJT_2019-06-20_12-55-57_lumi_Pass.xjlog" />
+    <None Include="Examples\55804024_XJT_2019-06-20_13-41-02_lumi_Pass.xjlog" />
+    <None Include="Examples\567567_14_29_24_17_06_2020_Pass.xjlog" />
+    <None Include="Examples\Demonstration hardware--28_10_2019-2.xjlog" />
+    <None Include="Examples\Demonstration hardware--28_10_2019.xjlog" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Examples\567567_14_29_24_17_06_2020_Pass.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
